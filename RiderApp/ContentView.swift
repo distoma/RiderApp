@@ -10,12 +10,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            ZStack {
+                Rectangle().fill(Color.gray).edgesIgnoringSafeArea(.all)
+                Circle().fill(Color.blue).opacity(0.3).frame(width: 30, height: 30)
+            }
+            Button(action: {}) {
+                Image(systemName: "plus")
+            }
+            .padding()
+            .background(Color.red)
+            .foregroundColor(Color.white)
+            .font(.title)
+            .clipShape(Circle())
+            .padding(.top, -35)
+            Text("Distance Evaluation").font(.title).bold()
+            Circle().frame(width: 300, height: 300)
+            HStack {
+                Spacer()
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "gear")
+                })
+            }.padding(.trailing, 20)
         }
-        .padding()
     }
 }
 
@@ -24,3 +42,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
