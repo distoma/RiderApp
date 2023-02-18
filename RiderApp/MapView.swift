@@ -14,7 +14,7 @@ struct MapView: UIViewRepresentable {
     }
         
     
-    var centerCoordinate: CLLocationCoordinate2D
+    @Binding var centerCoordinate: CLLocationCoordinate2D
     var mapAnnotations: [MKPointAnnotation]
     
     func makeUIView(context: Context) -> MKMapView {
@@ -56,6 +56,7 @@ extension MKPointAnnotation {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(centerCoordinate: MKPointAnnotation.appleParkExample.coordinate, mapAnnotations: [MKPointAnnotation.appleParkExample])
+        MapView(centerCoordinate: .constant(MKPointAnnotation.appleParkExample.coordinate), mapAnnotations: [MKPointAnnotation.appleParkExample])
+//        MapView(centerCoordinate: MKPointAnnotation.appleParkExample.coordinate, mapAnnotations: [MKPointAnnotation.appleParkExample])
     }
 }

@@ -12,6 +12,11 @@
 		994F743829932E1C005B4E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994F743729932E1C005B4E10 /* Assets.xcassets */; };
 		994F743C29932E1C005B4E10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994F743B29932E1C005B4E10 /* Preview Assets.xcassets */; };
 		994F744329936AA8005B4E10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F744229936AA8005B4E10 /* MapView.swift */; };
+		994F7445299B1E79005B4E10 /* DistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F7444299B1E79005B4E10 /* DistanceManager.swift */; };
+		994F7447299B2672005B4E10 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F7446299B2672005B4E10 /* SettingsView.swift */; };
+		994F7449299B3FB6005B4E10 /* SettingsDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F7448299B3FB6005B4E10 /* SettingsDefaults.swift */; };
+		994F744B299B5BBE005B4E10 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994F744A299B5BBE005B4E10 /* SettingsManager.swift */; };
+		99D51841299B630100E042E6 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D51840299B630100E042E6 /* RingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		994F743929932E1C005B4E10 /* RiderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RiderApp.entitlements; sourceTree = "<group>"; };
 		994F743B29932E1C005B4E10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		994F744229936AA8005B4E10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		994F7444299B1E79005B4E10 /* DistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceManager.swift; sourceTree = "<group>"; };
+		994F7446299B2672005B4E10 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		994F7448299B3FB6005B4E10 /* SettingsDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDefaults.swift; sourceTree = "<group>"; };
+		994F744A299B5BBE005B4E10 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		99D51840299B630100E042E6 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				994F743329932E1B005B4E10 /* RiderAppApp.swift */,
+				99D51840299B630100E042E6 /* RingView.swift */,
+				994F7448299B3FB6005B4E10 /* SettingsDefaults.swift */,
+				994F744A299B5BBE005B4E10 /* SettingsManager.swift */,
 				994F743529932E1B005B4E10 /* ContentView.swift */,
+				994F7446299B2672005B4E10 /* SettingsView.swift */,
 				994F744229936AA8005B4E10 /* MapView.swift */,
+				994F7444299B1E79005B4E10 /* DistanceManager.swift */,
 				994F743729932E1C005B4E10 /* Assets.xcassets */,
 				994F743929932E1C005B4E10 /* RiderApp.entitlements */,
 				994F743A29932E1C005B4E10 /* Preview Content */,
@@ -142,8 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				994F7449299B3FB6005B4E10 /* SettingsDefaults.swift in Sources */,
 				994F743629932E1B005B4E10 /* ContentView.swift in Sources */,
+				994F7447299B2672005B4E10 /* SettingsView.swift in Sources */,
+				994F744B299B5BBE005B4E10 /* SettingsManager.swift in Sources */,
+				99D51841299B630100E042E6 /* RingView.swift in Sources */,
 				994F744329936AA8005B4E10 /* MapView.swift in Sources */,
+				994F7445299B1E79005B4E10 /* DistanceManager.swift in Sources */,
 				994F743429932E1B005B4E10 /* RiderAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
